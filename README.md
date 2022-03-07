@@ -2,7 +2,7 @@
 
 **Setup
 
-Run pip install requirements.txt file from project directory to install dependencies
+Run pip install -r requirements.txt file from project directory to install dependencies
 
 **Run application locally
 
