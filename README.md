@@ -1,10 +1,10 @@
 # detect_heart
 
-#Setup
+**Setup
 
 Run pip install requirements.txt file from project directory to install dependencies
 
-#Run application locally
+**Run application locally
 
 To run the application locally, run the following command on terminal from project directory:
 
