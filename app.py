@@ -19,8 +19,7 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-st.title("EpochZero AI Heart Detection")
-#st.header("Brain Tumor MRI Classification")
+st.title("AI Heart Detection")
 st.text("Upload a chest x-ray Image to Detect the Heart")
 
 uploaded_file = st.file_uploader("Upload a chest x-ray ...", type=['jpg','jpeg','png'])
@@ -64,19 +63,12 @@ if uploaded_file is not None:
     plot1 = fig.add_subplot(121)
     plot2 = fig.add_subplot(122)
     plot1.imshow(processed_image[0], cmap="binary")
-    #plot1.text(3, 8, f"{final_pred:.2f}%", style='italic', size = 50, bbox={'facecolor':'red' if final_pred > 50 else 'green', 'alpha':0.5, 'pad':10})
-
-
-    #plot1.text(0.5, 0.5, 'EpochZero', transform=plot1.transAxes, fontsize=100, color='white', alpha=0.3, ha='center', va='center', rotation='0')
 
     
     plot2.imshow(processed_image[0], cmap="binary")
 
     
     plot2.add_patch(heart)
-
-
-    #plot2.text(0.5, 0.5, 'EpochZero', transform=plot2.transAxes, fontsize=100, color='white', alpha=0.3, ha='center', va='center', rotation='0')
     
     
     st.pyplot(fig)
@@ -89,6 +81,6 @@ for i in range(18):
 
 
 
-st.write("By Mayowa Abejirin for EpochZero")
+st.write("By Mayowa Abejirin")
 
 
